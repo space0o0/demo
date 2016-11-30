@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.space.test.SecondActivity">
+
+
+
+    <TextView
+        android:id="@+id/depentent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFF0000"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="top|left"
+        android:text="depentent"/>
+
+    <TextView
+        android:id="@+id/auto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF00FF00"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="top|right"
+        app:layout_behavior="com.example.space.test.behavior.toolbarBehavior"
+        android:text="auto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</android.support.design.widget.CoordinatorLayout>
