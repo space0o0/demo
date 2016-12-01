@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="names">
+
+        <item>jack</item>
+        <item>debb</item>
+        <item>robin</item>
+        <item>kikt</item>
+        <item>dog</item>
+        <item>cat</item>
+        <item>elep</item>
+        <item>fish</item>
+        <item>jhon</item>
+        <item>apple</item>
+        <item>orange</item>
+        <item>banana</item>
+        <item>item0</item>
+    </string-array>
+</resources>

@@ -21,7 +21,11 @@
             android:label="@string/title_activity_login" />
         <activity
             android:name=".SecondActivity"
-            android:label="@string/title_activity_second"></activity>
+            android:label="@string/title_activity_second" />
+        <activity
+            android:name=".module.behavior.BehaviorExample1Activity"
+            android:label="@string/title_activity_behavior_example1"
+            android:theme="@style/theme"></activity>
     </application>
 
 </manifest>

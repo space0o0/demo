@@ -11,6 +11,7 @@
         android:background="@color/colorPrimary"
         app:navigationIcon="@drawable/ic_account_circle_deep_purple_400_24dp"
         app:title="xxxx"
+        app:popupTheme="@style/theme.PopupOverlay"
         app:titleTextColor="@color/white" />
 
 </FrameLayout>
