@@ -58,6 +58,7 @@ public class BehaviorExample1Activity extends AppCompatActivity {
 
             @Override
             public void bindData(BaseRecyclerViewHolder holder, int position, String item) {
+
                 holder.getTextView(R.id.item_text).setText(item);
             }
         };

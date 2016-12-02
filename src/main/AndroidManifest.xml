@@ -25,6 +25,10 @@
         <activity
             android:name=".module.behavior.BehaviorExample1Activity"
             android:label="@string/title_activity_behavior_example1"
+            android:theme="@style/theme" />
+        <activity
+            android:name=".module.behavior.BehaviorExample2Activity"
+            android:label="@string/title_activity_behavior_example2"
             android:theme="@style/theme"></activity>
     </application>
 

@@ -8,5 +8,6 @@
     <string name="title_activity_second">SecondActivity</string>
     <string name="behavior_toolbar" translatable="false">com.example.space.test.behavior.toolbarBehavior</string>
     <string name="title_activity_behavior_example1">BehaviorExample1Activity</string>
+    <string name="title_activity_behavior_example2">BehaviorExample2Activity</string>
 
 </resources>

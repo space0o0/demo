@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.space.test.module.behavior.BehaviorExample1Activity;
+import com.example.space.test.module.behavior.BehaviorExample2Activity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -38,7 +38,7 @@ public class MainActivity extends Activity implements DialogInterface.OnClickLis
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,BehaviorExample1Activity.class);
+                Intent intent=new Intent(MainActivity.this,BehaviorExample2Activity.class);
                 startActivity(intent);
             }
         });

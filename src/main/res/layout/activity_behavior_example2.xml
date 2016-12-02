@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.space.test.module.behavior.BehaviorExample2Activity">
+
+    <TextView
+        android:id="@+id/dependency"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="dependency"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:background="@color/gr"
+        android:gravity="center"
+        android:text="child"
+        android:textColor="@color/white"
+        app:layout_behavior="com.example.space.test.behavior.BehaviorExample2Behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

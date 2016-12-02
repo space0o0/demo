@@ -67,7 +67,6 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
     @Override
     public void onBindViewHolder(final BaseRecyclerViewHolder holder, final int position) {
 
-
         switch (STATE) {
             case ITEM_VIEW_TYPE_NORMAL:
 
