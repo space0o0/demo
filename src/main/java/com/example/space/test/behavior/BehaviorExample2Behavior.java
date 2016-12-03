@@ -11,7 +11,7 @@ import android.widget.TextView;
  * Created by space on 16/12/2.
  */
 
-public class BehaviorExample2Behavior extends CoordinatorLayout.Behavior {
+public class BehaviorExample2Behavior extends CoordinatorLayout.Behavior{
 
     /**
      * Default constructor for inflating Behaviors from layout. The Behavior will have
@@ -44,4 +44,6 @@ public class BehaviorExample2Behavior extends CoordinatorLayout.Behavior {
 
         return super.onDependentViewChanged(parent, child, dependency);
     }
+
+
 }
