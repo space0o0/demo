@@ -10,5 +10,9 @@
     <string name="title_activity_behavior_example1">BehaviorExample1Activity</string>
     <string name="title_activity_behavior_example2">BehaviorExample2Activity</string>
     <string name="title_activity_behavior_example3">BehaviorExample3Activity</string>
+    <string name="title_activity_bottom_example1">BottomExample1Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

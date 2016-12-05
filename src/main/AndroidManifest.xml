@@ -33,6 +33,10 @@
         <activity
             android:name=".module.behavior.BehaviorExample3Activity"
             android:label="@string/title_activity_behavior_example3"
+            android:theme="@style/theme" />
+        <activity
+            android:name=".module.bottom.BottomExample1Activity"
+            android:label="@string/title_activity_bottom_example1"
             android:theme="@style/theme"></activity>
     </application>
 
