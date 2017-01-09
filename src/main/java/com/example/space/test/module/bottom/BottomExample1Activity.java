@@ -2,6 +2,7 @@ package com.example.space.test.module.bottom;
 
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -28,6 +29,7 @@ public class BottomExample1Activity extends BaseActivity implements View.OnClick
     protected void initView() {
         ButterKnife.bind(this);
 
+        Log.i("tag","启动activity");
         imgAdd.setOnClickListener(this);
 
 
@@ -53,7 +55,7 @@ public class BottomExample1Activity extends BaseActivity implements View.OnClick
                 }
                 break;
         }
-        getWindowManager().removeView(imgAdd);
+//        getWindowManager().removeView(imgAdd);
 
 //        imgAdd.setZ(Integer.MAX_VALUE);
 //        imgAdd.bringToFront();

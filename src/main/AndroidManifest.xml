@@ -2,6 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.space.test">
 
+    <!-- 读取短消息 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 读取联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 发送短消息 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 写入短消息 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 接收消息 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -17,8 +30,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".module.login.view.LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:name="com.example.space.test.module.mysmsthreads.MainActivity"
+            android:label="mysmsthreads.MainActivity" />
+        <activity
+            android:name="com.example.space.test.module.mysmsthreads.ThreadDetailActivity"
+            android:label="mysmsthreads.MainActivity" />
         <activity
             android:name=".SecondActivity"
             android:label="@string/title_activity_second" />
@@ -37,6 +53,7 @@
         <activity
             android:name=".module.bottom.BottomExample1Activity"
             android:label="@string/title_activity_bottom_example1"
+            android:launchMode="standard"
             android:theme="@style/theme"></activity>
     </application>
 
