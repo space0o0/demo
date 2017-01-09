@@ -30,10 +30,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.space.test.module.mysmsthreads.MainActivity"
+            android:name=".module.mysmsthreads.MainActivity"
             android:label="mysmsthreads.MainActivity" />
         <activity
-            android:name="com.example.space.test.module.mysmsthreads.ThreadDetailActivity"
+            android:name=".module.mysmsthreads.ThreadDetailActivity"
             android:label="mysmsthreads.MainActivity" />
         <activity
             android:name=".SecondActivity"
@@ -54,7 +54,8 @@
             android:name=".module.bottom.BottomExample1Activity"
             android:label="@string/title_activity_bottom_example1"
             android:launchMode="standard"
-            android:theme="@style/theme"></activity>
+            android:theme="@style/theme" />
+        <activity android:name=".module.viewDragHelper.ViewDragHelperActivity"></activity>
     </application>
 
 </manifest>
