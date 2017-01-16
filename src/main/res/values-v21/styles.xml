@@ -2,4 +2,12 @@
 <resources>
 
     <style name="AppTheme" parent="android:Theme.Material.Light"></style>
+
+    <style name="theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowContentTransitions">true</item> 
+    </style>
 </resources>

@@ -1,15 +1,18 @@
 package com.example.space.test;
 
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.space.test.module.viewDragHelper.ViewDragHelperActivity;
 
@@ -27,6 +30,9 @@ public class MainActivity extends Activity implements DialogInterface.OnClickLis
     @Bind(R.id.button)
     Button button;
 
+    @Bind(R.id.textView)
+    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,10 +46,24 @@ public class MainActivity extends Activity implements DialogInterface.OnClickLis
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this, ViewDragHelperActivity.class);
 //                startActivity(intent);
-                startActivity(intent);
+
+                tvTimer(textView);
             }
         });
 
+    }
+
+    public void tvTimer(final View view){
+        ValueAnimator valueAnimator=ValueAnimator.ofInt(0,100,900);
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                ((TextView)view).setText((Integer) animation.getAnimatedValue()+"");
+            }
+        });
+
+        valueAnimator.setDuration(1000);
+        valueAnimator.start();
 
     }
 
